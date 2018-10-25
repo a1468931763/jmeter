@@ -21,11 +21,11 @@
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="循环控制器" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>
-          <intProp name="LoopController.loops">-1</intProp>
+          <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
         <stringProp name="ThreadGroup.num_threads">1</stringProp>
         <stringProp name="ThreadGroup.ramp_time">1</stringProp>
-        <boolProp name="ThreadGroup.scheduler">true</boolProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration">60</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
@@ -44,7 +44,7 @@
           <stringProp name="HTTPSampler.response_timeout"></stringProp>
         </ConfigTestElement>
         <hashTree/>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV 数据文件设置" enabled="true">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV 数据文件设置" enabled="false">
           <stringProp name="filename">C:/Users/a1468/Desktop/name.csv</stringProp>
           <stringProp name="fileEncoding">utf-8</stringProp>
           <stringProp name="variableNames">name</stringProp>
@@ -64,7 +64,7 @@
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol"></stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/s?wd=${name}</stringProp>
+          <stringProp name="HTTPSampler.path">/s?wd=cat</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -118,7 +118,7 @@
           <boolProp name="displaySystemProperties">false</boolProp>
         </DebugSampler>
         <hashTree/>
-        <kg.apc.jmeter.perfmon.PerfMonCollector guiclass="kg.apc.jmeter.vizualizers.PerfMonGui" testclass="kg.apc.jmeter.perfmon.PerfMonCollector" testname="jp@gc - PerfMon Metrics Collector" enabled="true">
+        <kg.apc.jmeter.perfmon.PerfMonCollector guiclass="kg.apc.jmeter.vizualizers.PerfMonGui" testclass="kg.apc.jmeter.perfmon.PerfMonCollector" testname="jp@gc - PerfMon Metrics Collector" enabled="false">
           <boolProp name="ResultCollector.error_logging">false</boolProp>
           <objProp>
             <name>saveConfig</name>
@@ -162,13 +162,13 @@
           <boolProp name="include_checkbox_state">false</boolProp>
           <boolProp name="exclude_checkbox_state">false</boolProp>
           <collectionProp name="metricConnections">
-            <collectionProp name="-456574074">
+            <collectionProp name="917712290">
               <stringProp name="-1204607085">localhost</stringProp>
               <stringProp name="1600768">4444</stringProp>
               <stringProp name="66952">CPU</stringProp>
               <stringProp name="0"></stringProp>
             </collectionProp>
-            <collectionProp name="-2139682035">
+            <collectionProp name="-1383002031">
               <stringProp name="-1204607085">localhost</stringProp>
               <stringProp name="1600768">4444</stringProp>
               <stringProp name="-1993889503">Memory</stringProp>
